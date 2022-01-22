@@ -13,13 +13,13 @@
 
         <action
             android:id="@+id/action_FirstFragment_to_SecondFragment"
-            app:destination="@id/SecondFragment" />
+            app:destination="@id/AddTaskFragment" />
     </fragment>
     <fragment
-        android:id="@+id/SecondFragment"
-        android:name="com.alan.todo.SecondFragment"
-        android:label="@string/second_fragment_label"
-        tools:layout="@layout/fragment_second">
+        android:id="@+id/AddTaskFragment"
+        android:name="com.alan.todo.AddTaskFragment"
+        android:label="@string/add_task"
+        tools:layout="@layout/fragment_add_task">
 
         <action
             android:id="@+id/action_SecondFragment_to_FirstFragment"
