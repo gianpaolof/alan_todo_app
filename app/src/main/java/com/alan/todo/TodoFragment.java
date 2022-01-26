@@ -12,11 +12,18 @@ import androidx.navigation.fragment.NavHostFragment;
 import androidx.recyclerview.widget.DefaultItemAnimator;
 import androidx.recyclerview.widget.LinearLayoutManager;
 
+import com.alan.todo.Adapters.TodoAdapter;
+import com.alan.todo.Models.TodoItem;
 import com.alan.todo.databinding.FragmentTodoBinding;
+
+import java.util.List;
 
 public class TodoFragment extends Fragment {
 
     private FragmentTodoBinding binding;
+
+    private TodoAdapter adapter;
+    private List<TodoItem> todoItems;
 
     private Context context;
 
