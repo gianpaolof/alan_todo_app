@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
     private AppBarConfiguration appBarConfiguration;
     private ActivityMainBinding binding;
 
-    private static final String SDK_KEY = "YOUR SDK KEY";
+    private static final String SDK_KEY = "/stage";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -116,6 +116,11 @@ public class MainActivity extends AppCompatActivity {
 
         if (commandName.equals("log_out")) {
             logOut();
+        }
+
+        if (commandName.equals("guestWifi")) {
+            binding.alanButton.playText("ready to setup guest wifi");
+
         }
 
         if (commandName.equals("add_todo")) {
